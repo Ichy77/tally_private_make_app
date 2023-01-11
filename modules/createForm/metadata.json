@@ -1,0 +1,8 @@
+{
+    "name": "createForm",
+    "label": "Create Form",
+    "description": "Create a new Tally Form",
+    "connection": "tally-2-qd6cu0",
+    "webhook": null,
+    "type": "action"
+}

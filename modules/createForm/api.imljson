@@ -1,0 +1,14 @@
+{
+    "url": "https://tally.so/forms/create",
+    "method": "GET",
+    "qs": {
+        "workspaceId": "{{parameters.workspaceID}}"
+    },
+    "body": {},
+    "headers": {
+        "Authorization": "Bearer {{parameters.authorization}}"
+    },
+    "response": {
+        "output": "{{body}}"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "url": "https://api.tally.so/login",
+    "method": "POST",
+    "headers": {},
+    "body": {
+        "email": "{{parameters.email}}",
+        "password": "{{parameters.pw}}"
+    },
+    "log": {},
+    "response": {
+        "data": {
+            "refreshToken": "{{getRefreshToken(headers.`set-cookie`[1])}}",
+            "accessToken": "{{body.authorizationToken}}"
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "name": "getAllBlocks",
+    "label": "getAllBlocks",
+    "description": "Get all Blocks within a Tally-Form.",
+    "connection": "tally-2-qd6cu0",
+    "webhook": null,
+    "type": "search"
+}

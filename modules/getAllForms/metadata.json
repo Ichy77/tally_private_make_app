@@ -1,0 +1,8 @@
+{
+    "name": "getAllForms",
+    "label": "Get all Forms",
+    "description": "Retrieve a list of forms created in your Tally account.",
+    "connection": "tally-2-qd6cu0",
+    "webhook": null,
+    "type": "search"
+}

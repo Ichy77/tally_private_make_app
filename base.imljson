@@ -1,0 +1,9 @@
+{
+    "baseUrl": "https://api.tally.so",
+    "log": {
+        "sanitize": [
+            "request.headers.Authorization",
+            "request.headers.Cookie"
+        ]
+    }
+}

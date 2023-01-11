@@ -1,0 +1,53 @@
+[
+    {
+        "url": "https://api.tally.so/me",
+        "method": "GET",
+        "qs": {},
+        "body": {},
+        "headers": {
+            "Cookie": "{{connection.refreshToken}}"
+        },
+        "timeout": 300000,
+        "response": {
+            "temp": {
+                "accessToken": "{{body.authorizationToken}}"
+            }
+        }
+    },
+    {
+        "url": "https://api.tally.so/forms/{{parameters.form_id}}",
+        "method": "GET",
+        "qs": {},
+        "body": {},
+        "headers": {
+            "Authorization": "Bearer {{temp.accessToken}}"
+        },
+        "timeout": 300000,
+        "response": {
+            "temp": {
+                "blocks": "{{body.blocks}}",
+                "status": "{{body.status}}",
+                "new_uuid": "{{generateUuid()}}"
+            }
+        }
+    },
+    {
+        "url": "https://api.tally.so/forms/{{parameters.form_id}}",
+        "method": "PATCH",
+        "qs": {},
+        "body": {
+            "status": "{{temp.status}}",
+            "settings": null,
+            "blocks": "{{addDdOption(temp.blocks,parameters.new_option, parameters.form_blocks,temp.new_uuid, ifempty(parameters.hidden,false), ifempty(parameters.required,true))}}"
+        },
+        "headers": {
+            "Authorization": "Bearer {{temp.accessToken}}"
+        },
+        "timeout": 300000,
+        "response": {
+            "output": {
+                "new_uuid": "{{temp.new_uuid}}"
+            }
+        }
+    }
+]

@@ -1,0 +1,34 @@
+[
+    {
+        "name": "form_id",
+        "type": "select",
+        "required": true,
+        "options": {
+            "store": "rpc://allForms",
+            "nested": [
+                {
+                    "name": "form_blocks",
+                    "type": "select",
+                    "label": "Dropdown Group Ids",
+                    "required": true,
+                    "mappable": true,
+                    "options": "rpc://getUniqueDropDown",
+                    "help": "It displays the last option's text and the corresponding GroupUuid."
+                }
+            ]
+        },
+        "label": "Form"
+    },
+    {
+        "name": "new_option",
+        "type": "text",
+        "required": true,
+        "label": "New DropDown Option"
+    },
+    {
+        "name": "old_option",
+        "type": "text",
+        "required": true,
+        "label": "The current text of the Dropdown Option to update."
+    }
+]

@@ -1,0 +1,8 @@
+{
+    "name": "updateDropdownOption",
+    "label": "Update Dropdown Option",
+    "description": "Update an already existent Dropdown Option.",
+    "connection": "tally-2-qd6cu0",
+    "webhook": null,
+    "type": "action"
+}

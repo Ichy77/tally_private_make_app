@@ -1,0 +1,33 @@
+[
+    {
+        "url": "https://api.tally.so/me",
+        "method": "GET",
+        "qs": {},
+        "body": {},
+        "headers": {
+            "Cookie": "{{connection.refreshToken}}"
+        },
+        "response": {
+            "temp": {
+                "accessToken": "{{body.authorizationToken}}"
+            }
+        }
+    },
+    {
+        "url": "https://api.tally.so/forms",
+        "method": "GET",
+        "qs": {},
+        "body": {},
+        "headers": {
+            "Authorization": "Bearer {{temp.accessToken}}"
+        },
+        "response": {
+            "iterate": "{{body}}",
+            "limit": 500,
+            "output": {
+                "label": "{{item.name}}",
+                "value": "{{item.id}}"
+            }
+        }
+    }
+]

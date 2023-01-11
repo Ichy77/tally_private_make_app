@@ -1,0 +1,38 @@
+{
+    "response": {
+        "output": [
+            {
+                "label": "Heading 1",
+                "value": "a"
+            },
+            {
+                "label": "Heading 2",
+                "value": "b"
+            },
+            {
+                "label": "Heading 3",
+                "value": "c"
+            },
+            {
+                "label": "Dropdown Menu",
+                "value": "DROPDOWN_OPTION"
+            },
+            {
+                "label": "Dropdown Menu Option",
+                "value": "DROPDOWN_OPTION"
+            },
+            {
+                "label": "Short Text",
+                "value": "INPUT_TEXT"
+            },
+            {
+                "label": "Heading 3",
+                "value": "TEXT_AREA"
+            },
+            {
+                "label": "Rating",
+                "value": "RATING"
+            }
+        ]
+    }
+}

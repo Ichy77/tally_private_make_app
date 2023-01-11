@@ -1,0 +1,14 @@
+[
+    {
+        "name": "email",
+        "type": "text",
+        "label": "E-Mail",
+        "required": true
+    },
+    {
+        "name": "pw",
+        "type": "text",
+        "label": "Password",
+        "required": true
+    }
+]

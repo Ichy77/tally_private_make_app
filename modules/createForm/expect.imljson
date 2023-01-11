@@ -1,0 +1,14 @@
+[
+    {
+        "name": "workspaceId",
+        "type": "text",
+        "label": "Workspace ID",
+        "required": true
+    },
+    {
+        "name": "authorization",
+        "type": "text",
+        "label": "Auth Token",
+        "required": true
+    }
+]

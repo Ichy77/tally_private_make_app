@@ -1,0 +1,22 @@
+[
+    {
+        "name": "form_id",
+        "type": "select",
+        "required": true,
+        "options": {
+            "store": "rpc://allForms",
+            "nested": [
+                {
+                    "name": "form_blocks",
+                    "type": "select",
+                    "label": "Dropdown Option to Remove.",
+                    "required": true,
+                    "mappable": true,
+                    "options": "rpc://getDropDown",
+                    "help": "It displays the last option's text and the corresponding GroupUuid. For mapping use the uuid of the block."
+                }
+            ]
+        },
+        "label": "Form"
+    }
+]

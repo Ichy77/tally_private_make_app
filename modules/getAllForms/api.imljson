@@ -1,0 +1,13 @@
+{
+    "url": "https://api.tally.so/forms",
+    "method": "GET",
+    "qs": {},
+    "body": {},
+    "headers": {
+        "Authorization": "Bearer {{connection.accessToken}}"
+    },
+    "response": {
+        "output": "{{item}}",
+        "iterate": "{{body}}"
+    }
+}

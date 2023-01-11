@@ -1,0 +1,10 @@
+[
+    {
+        "name": "form_id",
+        "type": "select",
+        "label": "Tally-Form",
+        "required": true,
+        "mappable": true,
+        "options": "rpc://allForms"
+    }
+]

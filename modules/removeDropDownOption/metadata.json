@@ -1,0 +1,8 @@
+{
+    "name": "removeDropDownOption",
+    "label": "Remove a DropDown Option",
+    "description": "Remove a DropDown Option in a form.",
+    "connection": "tally-2-qd6cu0",
+    "webhook": null,
+    "type": "action"
+}
