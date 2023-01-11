@@ -11,3 +11,4 @@ a) The connection should handle the token refresh conditionally on time <br />
 b) the module's timeout should be increased from 40sec up to whatever is possible <br />
 c) I've forgot error handling -> easy fix <br />
 d) module's interfaces haven't been implemented <br />
+e) add more block-types additionally to the Dropdown
